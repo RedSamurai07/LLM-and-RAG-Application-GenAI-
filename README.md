@@ -35,8 +35,6 @@
 | -------- | -------- | -------- | 
 
 ### Tools
-- Excel : Google Sheets - Check for data types, Table formatting
-- SQL : Big QueryStudio - Querying, manipulating, and managing data in relational databases in 
 - Python: Google Colab - Data Preparation and pre-processing, Exploratory Data Analysis, Descriptive Statistics, inferential Statistics, Data manipulation and Analysis(Numpy, Pandas),Visualization (Matplotlib, Seaborn), Feature Engineering, Hypothesis Testing
   
 ### Analysis
