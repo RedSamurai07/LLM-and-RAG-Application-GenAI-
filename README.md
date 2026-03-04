@@ -25,7 +25,7 @@ Architectural Excellence: To build a robust RAG pipeline using a hybrid search e
 [Dataset](https://huggingface.co/datasets/MarkrAI/AutoRAG-evaluation-2024-LLM-paper-v1)
 
 ### Tools
-- Python: Google Colab - Data Preparation and pre-processing, Exploratory Data Analysis, Descriptive Statistics, inferential Statistics, Data manipulation and Analysis(Numpy, Pandas),Visualization (Matplotlib, Seaborn), Feature Engineering, Hypothesis Testing
+- Python: Google Colab - Data Preparation, Analysis, Frameworks & Orchestration, Vector Database, Models as in Creation of Embeddings and LLM Foundations, Search & Retrieval, Evaluation, Reciprocal Rank Fusion (RRF), Data Handling from Hugging face, Monitoring and Latency Tracking
   
 ### Analysis
 **Python**
