@@ -164,6 +164,35 @@ if __name__ == "__main__":
 <img width="1765" height="695" alt="image" src="https://github.com/user-attachments/assets/b028bc0f-7e75-4bd9-9446-49fc280d4282" /><img width="1797" height="477" alt="image" src="https://github.com/user-attachments/assets/e108d94b-d08d-483f-a6ab-39da30a0b8cd" /><img width="1789" height="491" alt="image" src="https://github.com/user-attachments/assets/3c7acc9d-b9d7-415e-b40e-6f809e8652f3" />
 <img width="842" height="425" alt="image" src="https://github.com/user-attachments/assets/3161fc7c-7b76-4df5-8c6a-f701d292a32c" />
 
+
+
+Model Deployment Guide:
+
+Stage 1: Setting Up Your Local Environment
+Begin your journey by establishing a development workspace on your computer before anything goes online. Get Python & Pip: Obtain the most recent 3.x release from python.org and confirm installation by entering python --version in your command line. Get Git: Acquire Git and register for a GitHub account, then execute git config --global user.name "Your Name" to connect your system to your profile. Get Docker Desktop: This critical software lets you bundle your application to ensure consistent behavior across your laptop and production servers. While setting this up, register for Docker Hub—it will serve as your "Container Repository."
+
+Stage 2: Organizing Your Workspace (Code & Dependencies)
+Structure your machine learning application properly. Build a Project Directory: Execute mkdir my-ml-app && cd my-ml-app. Configure a Virtual Environment: Execute python -m venv venv and activate using source venv/bin/activate (Mac) or .\venv\Scripts\activate (Windows).
+Purpose? This prevents conflicts between ML frameworks (such as Scikit-Learn or PyTorch) across different projects. Generate a requirements.txt: Document your dependencies here (examples: pandas, scikit-learn, flask). Deploy them via pip install -r requirements.txt. Prior to this, capture package versions by running pip list in your terminal.
+
+Stage 3: Packaging for Distribution (Containerization & Repository)
+Your code is ready; now package it for transport. Develop a Dockerfile: This script instructs Docker to fetch Python, transfer your codebase, install dependencies, and launch the model. Construct your Image: Execute docker build -t my-ml-model. Upload to Repository: Authenticate with Docker Hub through your terminal (docker login) and upload your image for cloud accessibility: docker push username/my-ml-model. Important: Within the Dockerfile, verify Python tags at hub.docker.com/_/python for containerization compatibility.
+
+tage 4: Production Launch & Workflow Automation
+Manual deployment is outdated; professionals employ automation to synchronize the production application with the source code. Cloud Infrastructure: Select a platform (such as GCP or AWS) to host your model permanently online. CI/CD Framework: Implement GitHub Actions to automate the build and deployment workflow. Each code commit to GitHub triggers automatic cloud updates. Basic Monitoring: Leverage your provider's native tools to track server performance and resource consumption.
+
+Stage 5: Cloud Infrastructure & Continuous Integration (Deployment & CI/CD)
+This stage brings your project into production. Cloud Platform Account (AWS/GCP/Azure): Choose one provider. Newcomers often find Google Cloud (GCP) or DigitalOcean more user-friendly than AWS. CI/CD (GitHub Actions): First, create a test.py file for model validation and metric visualization on MLflow.
+
+Establish a directory in your project: .github/workflows/ and within it:
+Include a .yml configuration that triggers: "Upon each GitHub code push, reconstruct my Docker image and deploy to the cloud."
+Monitoring: After the model runs on cloud infrastructure, utilize the provider's dashboard (like AWS CloudWatch) to detect errors or excessive CPU consumption.
+
+Stage 5: Performance Monitoring (Prometheus & Grafana):
+The final verification layer.
+1). Prometheus: Collects metrics from your deployed model (traffic volume, crash reports).
+2). Grafana: Interfaces with Prometheus to display dynamic, visual dashboards of your model's performance.
+
 ### Insights
 
 - Hybrid Search Superiority: Relying solely on vector search often misses specific keywords; combining it with BM25 through Reciprocal Rank Fusion (RRF) significantly enhances retrieval precision.
