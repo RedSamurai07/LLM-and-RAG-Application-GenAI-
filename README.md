@@ -1,5 +1,6 @@
 # LLM and RAG Application (GenAI)
 
+![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg)
 
 ## Table of contents
 - [Project Overview](#project-overview)
