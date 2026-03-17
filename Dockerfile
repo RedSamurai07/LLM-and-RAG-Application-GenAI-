@@ -2,11 +2,15 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install only what the FastAPI server needs (slim set)
-COPY requirements.docker.txt ./requirements.txt
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+# Install CPU-only torch first to save space
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+
+COPY requirements.docker.txt .
+RUN pip install --no-cache-dir -r requirements.docker.txt
 
 COPY app/ ./app
 
