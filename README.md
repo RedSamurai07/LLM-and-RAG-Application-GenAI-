@@ -28,7 +28,23 @@ Architectural Excellence: To build a robust RAG pipeline using a hybrid search e
 
 ### Tools
 - Python: Google Colab - Data Preparation, Analysis, Frameworks & Orchestration, Vector Database, Models as in Creation of Embeddings and LLM Foundations, Search & Retrieval, Evaluation, Reciprocal Rank Fusion (RRF), Data Handling from Hugging face, Monitoring and Latency Tracking
-  
+
+- Model Deployment: Docker, EC2, MLflow
+
+- CI/CD: GitHub Actions
+
+- Version Control: Git
+
+- Containerization: Docker
+
+- Infrastructure: AWS EC2
+
+- Model Management: MLflow
+
+- Testing: PyTest
+
+- Documentation: Markdown
+
 ### Analysis
 **Python**
 Importing all the necessary libraries
