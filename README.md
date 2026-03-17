@@ -1,5 +1,6 @@
 # LLM and RAG Application (GenAI)
 
+
 ## Table of contents
 - [Project Overview](#project-overview)
 - [Executive Summary](#executive-summary)
@@ -18,21 +19,6 @@
 
 ### Data structure and initial checks
 [Dataset](https://huggingface.co/datasets/MarkrAI/AutoRAG-evaluation-2024-LLM-paper-v1)
-
- - The initial checks of your transactions.csv dataset reveal the following:
-
-| Features | Description | Data types |
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
-| -------- | -------- | -------- | 
 
 ### Tools
 - Python: Google Colab - Data Preparation and pre-processing, Exploratory Data Analysis, Descriptive Statistics, inferential Statistics, Data manipulation and Analysis(Numpy, Pandas),Visualization (Matplotlib, Seaborn), Feature Engineering, Hypothesis Testing
