@@ -37,7 +37,7 @@ def train_pipeline():
             split="train"
         )
 
-        docs = [d["text"] for d in dataset]
+        docs = [{"content": d["contents"], "id": d["doc_id"]} for d in dataset]
 
         engine = HybridSearchEngine(docs)
         rag = RAGPipeline(engine)

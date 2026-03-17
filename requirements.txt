@@ -8,4 +8,6 @@ sentence-transformers==3.3.1
 rank-bm25==0.2.2
 langchain==0.3.14
 langchain-community==0.3.14
+torch
+scipy
 pytest==8.3.4
