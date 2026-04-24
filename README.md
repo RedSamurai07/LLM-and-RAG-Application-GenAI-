@@ -1,9 +1,9 @@
 
 # LLM and RAG Application (GenAI)
 
-![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg?branch=main)
 
-[![LINK](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
+![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg?branch=main)
+[![Open In Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
 
 
 ## Table of contents
@@ -194,26 +194,26 @@ Stage 1: Setting Up Your Local Environment
 Begin your journey by establishing a development workspace on your computer before anything goes online. Get Python & Pip: Obtain the most recent 3.x release from python.org and confirm installation by entering python --version in your command line. Get Git: Acquire Git and register for a GitHub account, then execute git config --global user.name "Your Name" to connect your system to your profile. Get Docker Desktop: This critical software lets you bundle your application to ensure consistent behavior across your laptop and production servers. While setting this up, register for Docker Hub—it will serve as your "Container Repository."
 
 Stage 2: Organizing Your Workspace (Code & Dependencies)
-Structure your machine learning application properly. Build a Project Directory: Execute mkdir my-ml-app && cd my-ml-app. Configure a Virtual Environment: Execute python -m venv venv and activate using source venv/bin/activate (Mac) or .\venv\Scripts\activate (Windows).
-Purpose? This prevents conflicts between ML frameworks (such as Scikit-Learn or PyTorch) across different projects. Generate a requirements.txt: Document your dependencies here (examples: pandas, scikit-learn, flask). Deploy them via pip install -r requirements.txt. Prior to this, capture package versions by running pip list in your terminal.
+Structure your machine learning application properly. Build a Project Directory: Execute mkdir my-ml-app && cd my-ml-app. Configure a Virtual Environment: Executepython -m venv venv and activate using source venv/bin/activate (Mac) or .\venv\Scripts\activate (Windows).
+Purpose? This prevents conflicts between ML frameworks (such as Scikit-Learn or PyTorch) across different projects. Generate a requirements.txt: Document your dependencies here (examples: pandas, scikit-learn, flask). Deploy them via pip install -r requirements.txt. Prior to this, capture package versions by running piplist in your terminal.
 
 Stage 3: Packaging for Distribution (Containerization & Repository)
-Your code is ready; now package it for transport. Develop a Dockerfile: This script instructs Docker to fetch Python, transfer your codebase, install dependencies, and launch the model. Construct your Image: Execute docker build -t my-ml-model. Upload to Repository: Authenticate with Docker Hub through your terminal (docker login) and upload your image for cloud accessibility: docker push username/my-ml-model. Important: Within the Dockerfile, verify Python tags at hub.docker.com/_/python for containerization compatibility.
+Your code is ready; now package it fortransport. Develop a Dockerfile: ThisscriptinstructsDockertofetchPython,transferyourcodebase,installdependencies,andlaunchthemodel.ConstructyourImage:Executedockerbuild-tmy-ml-model.UploadtoRepository:AuthenticatewithDockerHubthroughyourterminal(dockerlogin)anduploadyourimageforcloudaccessibility:dockerpushusername/my-ml-model.Important:WithintheDockerfile,verifyPythontagsathub.docker.com/_/pythonforcontainerizationcompatibility.
 
-tage 4: Production Launch & Workflow Automation
-Manual deployment is outdated; professionals employ automation to synchronize the production application with the source code. Cloud Infrastructure: Select a platform (such as GCP or AWS) to host your model permanently online. CI/CD Framework: Implement GitHub Actions to automate the build and deployment workflow. Each code commit to GitHub triggers automatic cloud updates. Basic Monitoring: Leverage your provider's native tools to track server performance and resource consumption.
+tage4: Production Launch & Workflow Automation
+Manualdeploymentisoutdated;professionalsemployautomationtosynchronizetheproductionapplicationwiththesourcecode.CloudInfrastructure:Selectaplatform(suchasGCPorAWS)tohostyourmodelpermanentlyonline.CI/CDFramework:ImplementGitHubActionstoautomatethebuildanddeploymentworkflow.EachcodecommittoGitHubtriggersautomaticcloudupdates.BasicMonitoring:Leverageyourprovider'snativetoolstotrackserverperformanceandresourceconsumption.
 
-Stage 5: Cloud Infrastructure & Continuous Integration (Deployment & CI/CD)
-This stage brings your project into production. Cloud Platform Account (AWS/GCP/Azure): Choose one provider. Newcomers often find Google Cloud (GCP) or DigitalOcean more user-friendly than AWS. CI/CD (GitHub Actions): First, create a test.py file for model validation and metric visualization on MLflow.
+Stage5: CloudInfrastructure & Continuous Integration (Deployment & CI/CD)
+Thisstagebringsyourprojectintoproduction.CloudPlatformAccount(AWS/GCP/Azure):Chooseoneprovider.NewcomersoftenfindGoogleCloud(GCP)orDigitalOceanmoreuser-friendlythanAWS.CI/CD(GitHubActions):First,createatest.pyfileformodelvalidationandmetricvisualizationonMLflow.
 
-Establish a directory in your project: .github/workflows/ and within it:
-Include a .yml configuration that triggers: "Upon each GitHub code push, reconstruct my Docker image and deploy to the cloud."
-Monitoring: After the model runs on cloud infrastructure, utilize the provider's dashboard (like AWS CloudWatch) to detect errors or excessive CPU consumption.
+Establishadirectoryinyourproject:.github/workflows/andwithinit:
+Includea.ymlconfigurationthattriggers:"UponeachGitHubcodepush,reconstructmyDockerimageanddeploytothecloud."
+Monitoring:Afterthemodelrunsoncloudinfrastructure,utilizetheprovider'sdashboard(likeAWSCloudWatch)todetecterrorsorexcessiveCPUconsumption.
 
-Stage 5: Performance Monitoring (Prometheus & Grafana):
-The final verification layer.
-1). Prometheus: Collects metrics from your deployed model (traffic volume, crash reports).
-2). Grafana: Interfaces with Prometheus to display dynamic, visual dashboards of your model's performance.
+Stage5: PerformanceMonitoring (Prometheus & Grafana):
+Thefinalverificationlayer.
+1).Prometheus:Collectsmetricsfromyourdeployedmodel(trafficvolume,crashreports).
+2).Grafana:InterfaceswithPrometheustodisplaydynamic,visualdashboardsofyourmodel'sperformance.
 
 ### Insights
 
@@ -230,16 +230,3 @@ The final verification layer.
 - Domain Specificity: Build the knowledge base around a unique corpus, such as your existing airline complaint data, to create a compelling narrative for technical interviews.Add a Feedback Loop: Incorporate a user feedback mechanism (e.g., helpful/not helpful ratings) to log performance and identify areas for iterative improvement.
   
 - Deployment: Deploy the final application on platforms like Hugging Face Spaces or via FastAPI to demonstrate a complete end-to-end production mindset.
-
-
-
-- - -  
- t i t l e :   L L M   a n d   R A G   A p p l i c a t i o n   ( G e n A I )  
- e m o j i :   =؀� 
- c o l o r F r o m :   b l u e  
- c o l o r T o :   i n d i g o  
- s d k :   g r a d i o  
- a p p _ f i l e :   a p p . p y  
- p i n n e d :   f a l s e  
- - - -  
- 
