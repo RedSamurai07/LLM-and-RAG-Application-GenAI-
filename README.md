@@ -1,4 +1,3 @@
-<!--
 ---
 title: LLM and RAG Application (GenAI)
 emoji: 🚀
@@ -8,7 +7,6 @@ sdk: gradio
 app_file: app.py
 pinned: false
 ---
--->
 
 # LLM and RAG Application (GenAI)
 
@@ -17,15 +15,6 @@ pinned: false
 [![LINK](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
 
 
-## Table of contents
-- [Project Overview](#project-overview)
-- [Executive Summary](#executive-summary)
-- [Goal](goal)
-- [Data Structure](data-structure)
-- [Tools](tools)
-- [Analysis](#analysis)
-- [Insights](insights)
-- [Recommendations](recommendations)
 
 ### Project Overview
 
