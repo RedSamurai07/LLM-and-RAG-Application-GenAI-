@@ -11,7 +11,8 @@ dataset = load_dataset(
     split="train"
 )
 # Using a subset for the live demo to ensure quick response times
-docs = [{"content": d["contents"], "id": d["doc_id"]} for d in dataset[:500]]
+subset = dataset.select(range(min(500, len(dataset))))
+docs = [{"content": d["contents"], "id": d["doc_id"]} for d in subset]
 print(f"Initializing Hybrid Search Engine with {len(docs)} documents...")
 engine = HybridSearchEngine(docs)
 pipeline = RAGPipeline(engine)
