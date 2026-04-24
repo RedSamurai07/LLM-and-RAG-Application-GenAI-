@@ -1,12 +1,3 @@
----
-title: LLM and RAG Application (GenAI)
-emoji: 🚀
-colorFrom: blue
-colorTo: indigo
-sdk: gradio
-app_file: app.py
-pinned: false
----
 
 # LLM and RAG Application (GenAI)
 
@@ -242,3 +233,13 @@ The final verification layer.
 
 
 
+- - -  
+ t i t l e :   L L M   a n d   R A G   A p p l i c a t i o n   ( G e n A I )  
+ e m o j i :   =؀� 
+ c o l o r F r o m :   b l u e  
+ c o l o r T o :   i n d i g o  
+ s d k :   g r a d i o  
+ a p p _ f i l e :   a p p . p y  
+ p i n n e d :   f a l s e  
+ - - -  
+ 
