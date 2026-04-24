@@ -1,3 +1,13 @@
+<br>
+---
+title: LLM and RAG Application (GenAI)
+emoji: 🚀
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+app_file: app.py
+pinned: false
+---
 
 # LLM and RAG Application (GenAI)
 
@@ -5,16 +15,6 @@
 ![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg?branch=main)
 [![Open In Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
 
-
-## Table of contents
-- [Project Overview](#project-overview)
-- [Executive Summary](#executive-summary)
-- [Goal](goal)
-- [Data Structure](data-structure)
-- [Tools](tools)
-- [Analysis](#analysis)
-- [Insights](insights)
-- [Recommendations](recommendations)
 
 ### Project Overview
 
@@ -198,7 +198,7 @@ Structure your machine learning application properly. Build a Project Directory:
 Purpose? This prevents conflicts between ML frameworks (such as Scikit-Learn or PyTorch) across different projects. Generate a requirements.txt: Document your dependencies here (examples: pandas, scikit-learn, flask). Deploy them via pip install -r requirements.txt. Prior to this, capture package versions by running piplist in your terminal.
 
 Stage 3: Packaging for Distribution (Containerization & Repository)
-Your code is ready; now package it fortransport. Develop a Dockerfile: ThisscriptinstructsDockertofetchPython,transferyourcodebase,installdependencies,andlaunchthemodel.ConstructyourImage:Executedockerbuild-tmy-ml-model.UploadtoRepository:AuthenticatewithDockerHubthroughyourterminal(dockerlogin)anduploadyourimageforcloudaccessibility:dockerpushusername/my-ml-model.Important:WithintheDockerfile,verifyPythontagsathub.docker.com/_/pythonforcontainerizationcompatibility.
+Your code is ready; now package it fortrsport. Develop a Dockerfile: ThisscriptinstructsDockertofetchPython,transferyourcodebase,installdependencies,andlaunchthemodel.ConstructyourImage:Executedockerbuild-tmy-ml-model.UploadtoRepository:AuthenticatewithDockerHubthroughyourterminal(dockerlogin)anduploadyourimageforcloudaccessibility:dockerpushusername/my-ml-model.Important:WithintheDockerfile,verifyPythontagsathub.docker.com/_/pythonforcontainerizationcompatibility.
 
 tage4: Production Launch & Workflow Automation
 Manualdeploymentisoutdated;professionalsemployautomationtosynchronizetheproductionapplicationwiththesourcecode.CloudInfrastructure:Selectaplatform(suchasGCPorAWS)tohostyourmodelpermanentlyonline.CI/CDFramework:ImplementGitHubActionstoautomatethebuildanddeploymentworkflow.EachcodecommittoGitHubtriggersautomaticcloudupdates.BasicMonitoring:Leverageyourprovider'snativetoolstotrackserverperformanceandresourceconsumption.

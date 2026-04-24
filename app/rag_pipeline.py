@@ -60,3 +60,11 @@ class RAGPipeline:
         results = self.engine.search(question)
         latency = (time.time() - start_time) * 1000
         return results, latency
+
+if __name__ == "__main__":
+    # Simple smoke test for CI/CD
+    docs = [{"content": "Retrieval Augmented Generation (RAG) is a powerful technique.", "id": "smoke_1"}]
+    engine = HybridSearchEngine(docs)
+    pipeline = RAGPipeline(engine)
+    res, lat = pipeline.query("What is RAG?")
+    print(f"Smoke test successful. Latency: {lat:.2f}ms")
