@@ -1,3 +1,4 @@
+<!-- HF Metadata -->
 ---
 title: LLM and RAG Application (GenAI)
 emoji: 🚀
@@ -197,7 +198,7 @@ Structure your machine learning application properly. Build a Project Directory:
 Purpose? This prevents conflicts between ML frameworks (such as Scikit-Learn or PyTorch) across different projects. Generate a requirements.txt: Document your dependencies here (examples: pandas, scikit-learn, flask). Deploy them via pip install -r requirements.txt. Prior to this, capture package versions by running piplist in your terminal.
 
 Stage 3: Packaging for Distribution (Containerization & Repository)
-Your code is ready; now package it fortransport. Develop a Dockerfile: ThisscriptinstructsDockertofetchPython,transferyourcodebase,installdependencies,andlaunchthemodel.ConstructyourImage:Executedockerbuild-tmy-ml-model.UploadtoRepository:AuthenticatewithDockerHubthroughyourterminal(dockerlogin)anduploadyourimageforcloudaccessibility:dockerpushusername/my-ml-model.Important:WithintheDockerfile,verifyPythontagsathub.docker.com/_/pythonforcontainerizationcompatibility.
+Your code is ready; now package it fortrsport. Develop a Dockerfile: ThisscriptinstructsDockertofetchPython,transferyourcodebase,installdependencies,andlaunchthemodel.ConstructyourImage:Executedockerbuild-tmy-ml-model.UploadtoRepository:AuthenticatewithDockerHubthroughyourterminal(dockerlogin)anduploadyourimageforcloudaccessibility:dockerpushusername/my-ml-model.Important:WithintheDockerfile,verifyPythontagsathub.docker.com/_/pythonforcontainerizationcompatibility.
 
 tage4: Production Launch & Workflow Automation
 Manualdeploymentisoutdated;professionalsemployautomationtosynchronizetheproductionapplicationwiththesourcecode.CloudInfrastructure:Selectaplatform(suchasGCPorAWS)tohostyourmodelpermanentlyonline.CI/CDFramework:ImplementGitHubActionstoautomatethebuildanddeploymentworkflow.EachcodecommittoGitHubtriggersautomaticcloudupdates.BasicMonitoring:Leverageyourprovider'snativetoolstotrackserverperformanceandresourceconsumption.
