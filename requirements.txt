@@ -11,3 +11,4 @@ langchain-community==0.3.14
 torch
 scipy
 pytest==8.3.4
+gradio
