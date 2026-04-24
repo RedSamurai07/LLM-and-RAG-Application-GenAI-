@@ -1,7 +1,7 @@
 # LLM and RAG Application (GenAI)
 
 ![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg?branch=main)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/RedSamurai07/LLM-and-RAG-Application-GenAI-)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
 
 
 ## Table of contents
