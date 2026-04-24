@@ -1,3 +1,4 @@
+<!--
 ---
 title: LLM and RAG Application (GenAI)
 emoji: 🚀
@@ -7,13 +8,13 @@ sdk: gradio
 app_file: app.py
 pinned: false
 ---
+-->
 
 # LLM and RAG Application (GenAI)
 
-
 ![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg?branch=main)
 
-[![Open In Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
+[![LINK](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
 
 
 ## Table of contents
