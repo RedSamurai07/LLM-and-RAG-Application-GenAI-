@@ -3,3 +3,7 @@ __pycache__/
 .env
 mlruns/
 .ipynb_checkpoints/
+.pytest_cache/
+*.pem
+*.tar.gz
+tmp_nb.py
