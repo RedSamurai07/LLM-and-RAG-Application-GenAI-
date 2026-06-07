@@ -12,3 +12,6 @@ torch
 scipy
 pytest==8.3.4
 gradio
+chromadb
+pymupdf
+pytest-cov
