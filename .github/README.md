@@ -11,6 +11,47 @@
 
 The project involves building a sophisticated Retrieval-Augmented Generation (RAG) application specifically designed to handle domain-specific queries. The application utilizes a hybrid search architecture that combines dense vector search (semantic) with sparse keyword search (BM25) to improve precision. The knowledge base is built from a document corpus, such as airline policy PDFs or research papers, and evaluated using advanced metrics to ensure accuracy and relevance.
 
+
+### Project Architecture
+
+```mermaid
+graph LR
+    subgraph Development [1. Data & Modeling]
+        A[LLM_RAG_application.ipynb Data] --> B[Hybrid Search & Embeddings]
+        B --> C[RAG Pipeline / LLM Inference]
+    end
+
+    subgraph Tracking [2. Experimentation]
+        C --> D((MLflow Tracking))
+    end
+
+    subgraph DevOps [3. CI/CD & Containers]
+        D --> E[GitHub Actions CI/CD]
+        E --> F[Docker Containerization]
+    end
+
+    subgraph Deployment [4. Production]
+        F --> G[AWS Cloud Deployment]
+    end
+
+    style D fill:#012A4A,stroke:#333,stroke-width:2px,color:#fff
+    style E fill:#2671E5,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#0db7ed,stroke:#333,stroke-width:2px,color:#fff
+    style G fill:#FF9900,stroke:#333,stroke-width:2px,color:#fff
+```
+
+### Production Architecture
+
+To demonstrate production readiness, this Hybrid RAG Pipeline is fully productized and automated:
+
+- **Containerization:** Packaged with Docker for seamless replication across local and cloud environments.
+- **Cloud Deployment:** Hosted on an AWS EC2 instance running a FastAPI backend microservice.
+- **Experiment Tracking:** Integrated with an MLflow artifact registry to log retrieval parameters and live evaluation metrics.
+- **CI/CD Pipeline:** Automated via GitHub Actions to execute unit tests on every code push.
+
+👉 **For the complete step-by-step technical setup, Dockerfiles, and cloud infrastructure configurations, read the full [Production Deployment Guide](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/blob/main/DEPLOYMENT.md).**
+
+
 ### Executive Summary
 This project demonstrates an industry-level approach to Generative AI by moving beyond simple "demo" systems to a production-ready RAG pipeline. By implementing hybrid search and a rigorous evaluation framework (RAGAS), the application overcomes common limitations in standard vector-search-only implementations. The pipeline is designed to be deployed as a domain-specific Q&A tool, providing high-fidelity responses grounded in a specific knowledge corpus, such as resolving customer airline complaints.
 
