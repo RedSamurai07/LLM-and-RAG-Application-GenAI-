@@ -1,7 +1,8 @@
 # LLM and RAG Application (GenAI)
 
-
 ![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg?branch=main)
+
+[![codecov](https://codecov.io/gh/RedSamurai07/LLM-and-RAG-Application-GenAI-/graph/badge.svg?token=B43VAF246N)](https://codecov.io/gh/RedSamurai07/LLM-and-RAG-Application-GenAI-)
 
 [![Open In Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
 
