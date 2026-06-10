@@ -1,7 +1,8 @@
 # LLM and RAG Application (GenAI)
 
+[![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/ci.yml/badge.svg)](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/ci.yml)
 
-![CI Pipeline](https://github.com/RedSamurai07/LLM-and-RAG-Application-GenAI-/actions/workflows/main.yml/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/RedSamurai07/LLM-and-RAG-Application-GenAI-/graph/badge.svg?token=B43VAF246N)](https://codecov.io/gh/RedSamurai07/LLM-and-RAG-Application-GenAI-)
 
 [![Open In Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Redlion007/LLM-and-RAG-Application-GenAI)
 
@@ -176,34 +177,6 @@ if __name__ == "__main__":
 <img width="1765" height="695" alt="image" src="https://github.com/user-attachments/assets/b028bc0f-7e75-4bd9-9446-49fc280d4282" /><img width="1797" height="477" alt="image" src="https://github.com/user-attachments/assets/e108d94b-d08d-483f-a6ab-39da30a0b8cd" /><img width="1789" height="491" alt="image" src="https://github.com/user-attachments/assets/3c7acc9d-b9d7-415e-b40e-6f809e8652f3" />
 <img width="842" height="425" alt="image" src="https://github.com/user-attachments/assets/3161fc7c-7b76-4df5-8c6a-f701d292a32c" />
 
-
-
-Model Deployment Guide:
-
-Stage 1: Setting Up Your Local Environment
-Begin your journey by establishing a development workspace on your computer before anything goes online. Get Python & Pip: Obtain the most recent 3.x release from python.org and confirm installation by entering python --version in your command line. Get Git: Acquire Git and register for a GitHub account, then execute git config --global user.name "Your Name" to connect your system to your profile. Get Docker Desktop: This critical software lets you bundle your application to ensure consistent behavior across your laptop and production servers. While setting this up, register for Docker Hub—it will serve as your "Container Repository."
-
-Stage 2: Organizing Your Workspace (Code & Dependencies)
-Structure your machine learning application properly. Build a Project Directory: Execute mkdir my-ml-app && cd my-ml-app. Configure a Virtual Environment: Executepython -m venv venv and activate using source venv/bin/activate (Mac) or .\venv\Scripts\activate (Windows).
-Purpose? This prevents conflicts between ML frameworks (such as Scikit-Learn or PyTorch) across different projects. Generate a requirements.txt: Document your dependencies here (examples: pandas, scikit-learn, flask). Deploy them via pip install -r requirements.txt. Prior to this, capture package versions by running piplist in your terminal.
-
-Stage 3: Packaging for Distribution (Containerization & Repository)
-Your code is ready; now package it fortrsport. Develop a Dockerfile: ThisscriptinstructsDockertofetchPython,transferyourcodebase,installdependencies,andlaunchthemodel.ConstructyourImage:Executedockerbuild-tmy-ml-model.UploadtoRepository:AuthenticatewithDockerHubthroughyourterminal(dockerlogin)anduploadyourimageforcloudaccessibility:dockerpushusername/my-ml-model.Important:WithintheDockerfile,verifyPythontagsathub.docker.com/_/pythonforcontainerizationcompatibility.
-
-tage4: Production Launch & Workflow Automation
-Manualdeploymentisoutdated;professionalsemployautomationtosynchronizetheproductionapplicationwiththesourcecode.CloudInfrastructure:Selectaplatform(suchasGCPorAWS)tohostyourmodelpermanentlyonline.CI/CDFramework:ImplementGitHubActionstoautomatethebuildanddeploymentworkflow.EachcodecommittoGitHubtriggersautomaticcloudupdates.BasicMonitoring:Leverageyourprovider'snativetoolstotrackserverperformanceandresourceconsumption.
-
-Stage5: CloudInfrastructure & Continuous Integration (Deployment & CI/CD)
-Thisstagebringsyourprojectintoproduction.CloudPlatformAccount(AWS/GCP/Azure):Chooseoneprovider.NewcomersoftenfindGoogleCloud(GCP)orDigitalOceanmoreuser-friendlythanAWS.CI/CD(GitHubActions):First,createatest.pyfileformodelvalidationandmetricvisualizationonMLflow.
-
-Establishadirectoryinyourproject:.github/workflows/andwithinit:
-Includea.ymlconfigurationthattriggers:"UponeachGitHubcodepush,reconstructmyDockerimageanddeploytothecloud."
-Monitoring:Afterthemodelrunsoncloudinfrastructure,utilizetheprovider'sdashboard(likeAWSCloudWatch)todetecterrorsorexcessiveCPUconsumption.
-
-Stage5: PerformanceMonitoring (Prometheus & Grafana):
-Thefinalverificationlayer.
-1).Prometheus:Collectsmetricsfromyourdeployedmodel(trafficvolume,crashreports).
-2).Grafana:InterfaceswithPrometheustodisplaydynamic,visualdashboardsofyourmodel'sperformance.
 
 ### Insights
 
